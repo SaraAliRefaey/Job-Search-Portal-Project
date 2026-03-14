@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Sign Up</title>
+</head>
+
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+
+    <h1>Welcome To Our Website</h1>
+    <br>
+
+    <p>Create Your Account</p>
+    <form>
+        <fieldset>
+            <legend>Account Information</legend>
+            <br>
+            <div>
+                <label for="username"> Username </label>
+                <input type="text" name="Username" id="username" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="password"> Password </label>
+                <input type="password" name="Password" id="password" minlength="10" maxlength="20" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="Confirmp"> Confirm Password </label>
+                <input type="password" name="Confirm" id="Confirmp" minlength="10" maxlength="20" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="mail"> Email </label>
+                <input type="email" name="email" id="mail" required>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="company"> Company Name </label>
+                <input type="Text" name="Company_name" id="company" placeholder="Only For Company Admins">
+            </div>
+
+            <br>
+
+            <div>
+                <input type="radio" name="User" id="admin">
+                <label for="admin"> Admin </label>
+
+                <input type="radio" name="User" id="companyadmin">
+                <label for="companyadmin"> Company Admin </label>
+            </div>
+
+            <br>
+
+            <div>
+                <input type="submit" value="Sign Up">
+                <!-- <input type="reset"> -->
+            </div>
+        </fieldset>
+    </form>
+
+    <br>
+
+    <a href="Login.html" title="Go to the login page">Already have an account?</a>
+
+    <footer>
+
+        <hr>
+
+        <p><strong>Job Search Website</strong></p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="signup.html">Sign Up</a> |
+            <a href="login.html">Login</a>
+        </p>
+
+        <p>Contact: support@jobsearch.com</p>
+
+        <p>© 2026 Job Search Website - FCAI Project</p>
+
+    </footer>
+
+</body>
+
+</html>
