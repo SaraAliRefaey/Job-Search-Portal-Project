@@ -2,82 +2,108 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Sign Up</title>
+    <link rel="stylesheet" href="css/login_signup_style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    
 </head>
 
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="signup.html">Sign Up</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>WorkWave</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="signup.html"><a href="Login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                </li>
+                <li>
+                    <a href="login.html"><a href="Signup.html"><i class="fa-solid fa-user-plus"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-    <h1>Welcome To Our Website</h1>
-    <br>
+    <hr>
 
-    <p>Create Your Account</p>
-    <form>
-        <fieldset>
-            <legend>Account Information</legend>
-            <br>
-            <div>
-                <label for="username"> Username </label>
-                <input type="text" name="Username" id="username" required>
-            </div>
+    
+    <section id="sign-up">
+        <h1>Welcome To Our Website, WorkWave</h1>
+        <br>
 
-            <br>
+        <p>Create Your Account</p>
+        <br>
+        
+        <form onsubmit="return validatePassword()">
+            <fieldset id="sborder">
+                <legend name="sign-up">Account Information</legend>
+                <br>
+                <div>
+                    <label for="username"> Username </label>
+                    <input type="text" name="Username" id="username" required>
+                </div>
 
-            <div>
-                <label for="password"> Password </label>
-                <input type="password" name="Password" id="password" minlength="10" maxlength="20" required>
-            </div>
+                <br>
 
-            <br>
+                <div>
+                    <label for="password"> Password </label>
+                    <input type="password" id="password" minlength="10" maxlength="20" required>
+                    <img src="show-pasword.PNG" height="15px" width="22px" id="show-password">
+                </div>
 
-            <div>
-                <label for="Confirmp"> Confirm Password </label>
-                <input type="password" name="Confirm" id="Confirmp" minlength="10" maxlength="20" required>
-            </div>
+                <br>
 
-            <br>
+                <div>
+                    <label for="Confirmp"> Confirm Password </label>
+                    <input type="password" id="Confirmp" minlength="10" maxlength="20" required>
+                    <img src="show-pasword.PNG" height="15px" width="22px" id="show-confirm-password">
+                </div>
 
-            <div>
-                <label for="mail"> Email </label>
-                <input type="email" name="email" id="mail" required>
-            </div>
+                <br>
 
-            <br>
+                <div>
+                    <label for="mail"> Email </label>
+                    <input type="email" name="email" id="mail" required>
+                </div>
 
-            <div>
-                <label for="company"> Company Name </label>
-                <input type="Text" name="Company_name" id="company" placeholder="Only For Company Admins">
-            </div>
+                <br>
 
-            <br>
+                <div>
+                    <label for="company" id="companyLabel" hidden> Company Name </label>
+                    <input type="Text" name="Company_name" id="company" hidden placeholder="Only For Company Admins">
+                </div>
 
-            <div>
-                <input type="radio" name="User" id="admin">
-                <label for="admin"> Admin </label>
+                <br>
 
-                <input type="radio" name="User" id="companyadmin">
-                <label for="companyadmin"> Company Admin </label>
-            </div>
+                <div>
+                    <input type="radio" name="User" id="admin" onclick="showCompanyName()">
+                    <label for="admin"> Admin </label>
 
-            <br>
+                    <input type="radio" name="User" id="companyadmin" onclick="showCompanyName()">
+                    <label for="companyadmin"> Company Admin </label>
+                </div>
 
-            <div>
-                <input type="submit" value="Sign Up">
-                <!-- <input type="reset"> -->
-            </div>
-        </fieldset>
-    </form>
+                <br>
 
-    <br>
+                <div>
+                    <button type="submit">Sign Up</button>
+                    <!-- <input type="reset"> -->
+                </div>
+                
+            </fieldset>
+        </form>
+        <a id="msg" href="Login.html" title="Go to the login page">Already have an account?</a>
+    </section>
 
-    <a href="Login.html" title="Go to the login page">Already have an account?</a>
+    
+
+    
 
     <footer>
 
@@ -97,6 +123,7 @@
 
     </footer>
 
+    <script src="forms.js"></script>
 </body>
 
 </html>
