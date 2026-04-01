@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Edit_Job</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
    <header>
@@ -16,29 +17,38 @@
     </nav>
    </header> 
    <main>
-    <h1>Update Jop</h1>
+    <h2>Update Jop</h2>
    </main>
    <form method="post">
-    <fieldset>
-        <legend>Update Form</legend> 
+   
+    
          <div>
             <label for="title">Jop Title : </label>
-            <input id="title" type="text"  name=" title" value="Software Engineer" required>
+            <br>
+            <input id="title" type="text"  name=" title"  >
+          <span id="tit" style="color: red; font: size 8px; display: none;font-family: 'Courier New', Courier, monospace;">title is required</span>
+
         </div>
         <br>
         <div>
             <label for="salary">Salary : </label>
-            <input id="salary" type="number"  name="salary" value="20000"  required>
+            <br>
+            <input id="salary" type="number"  name="salary"  >
+          <span id="sal" style="color: red; font: size 8px;display: none;font-family: 'Courier New', Courier, monospace; ">Salary is required</span>
+
         </div>
         <br>
         <div>
             <label for="description">Description : </label>
-            <textarea id="description" name="description" rows="6" cols="50" required>Develop and maintain web applications,collaborate with cross-functional teams, and write clean, efficient code.
-            </textarea>
+            <br>
+            <textarea id="description" name="description" rows="6" cols="50" ></textarea>
+         <span id="des" style="color: red; font: size 8px;display: none;font-family: 'Courier New', Courier, monospace; ">Description is required</span>
+
         </div>
         <br>
         <div>
             <label for="status"> Jop Status : </label>
+            <br>
             <select id="status" name="status" required>
                 <option value="open">Open</option>
                 <option value="closed">Closed</option>
@@ -46,13 +56,13 @@
         </div>
         <br>
         <div>
-            <input type="submit" value="Update Jop">
+            <button type="submit" id="btn" >Update Jop</button>
         </div>
-       </fieldset>
+       
     </form>
     
 <footer>
-<hr>
+
 
 <p><strong>Job Search Website</strong></p>
 
@@ -69,6 +79,6 @@
 </footer>
 
   
-
+<script src="edit_jop.js"></script>
 </body>
 </html>

@@ -3,6 +3,8 @@
 <head>
     
     <title>Add_Jop</title>
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -13,33 +15,40 @@
         <a href="add_job.html">Add Job</a> |
         <a href="edit_job.html">Edit Job</a> 
     </p>
-</nav>
+       </nav>
 
  
     </header>
     <main>
-        <h1>Add New Jop</h1>
+        <h2>Add New Jop</h2>
     </main>
-    <form method="post">
-       <fieldset>
-        <legend>Add Jop Form</legend> 
+    <form method="post" id="form">
+     
+        
          <div>
-            <label for="title">Jop Title : </label>
-            <input id="title" type="text"  name=" title" required>
+            <label for="title">Jop Title: </label>
+            <br>
+            <input id="title" type="text"  name=" title" >
+             <span id="tit" style="color: red; font: size 8px; display: none;font-family: 'Courier New', Courier, monospace;">title is required</span>
         </div>
         <br>
         <div>
-            <label for="salary">Salary : </label>
-            <input id="salary" type="number"  name="salary"  required>
+            <label for="salary">Salary: </label>
+            <br>
+            <input id="salary" type="number"  name="salary"  >
+             <span id="sal" style="color: red; font: size 8px;display: none;font-family: 'Courier New', Courier, monospace; ">Salary is required</span>
         </div>
         <br>
         <div>
-            <label for="description">Description : </label>
-            <textarea id="description" name="description" rows="6"  cols="50" required></textarea>
+            <label for="description">Description: </label>
+            <br>
+            <textarea id="description" name="description" rows="6"  cols="50" ></textarea>
+            <span id="des" style="color: red; font: size 8px;display: none;font-family: 'Courier New', Courier, monospace; ">Description is required</span>
         </div>
         <br>
         <div>
-            <label for="status"> Jop Status : </label>
+            <label for="status"> Jop Status: </label>
+            <br>
             <select id="status" name="status" required>
                 <option value="open">Open</option>
                 <option value="closed">Closed</option>
@@ -47,13 +56,13 @@
         </div>
         <br>
         <div>
-            <input type="submit" value="Add Jop">
+            <button type="submit" id="btn" > Add Jop</button>
         </div>
-       </fieldset>
+      
     </form>
     
 <footer>
-<hr>
+
 
 <p><strong>Job Search Website</strong></p>
 
@@ -69,6 +78,7 @@
 
 </footer>
 
-   
+     <script src="script.js"></script>
+  
 </body>
 </html>
