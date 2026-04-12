@@ -4,40 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Applied Jobs </title>
+    <!-- 1. Link to Google Fonts & Font Awesome -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://cloudflare.com">
+    
+    <!-- 2. Link to CSS files -->
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/AppJob.css">
 </head>
 <body>
-    <h1> Applied Jobs </h1>
-    <table border="1">
-        <tr>
-            <th>Job Title</th>
-            <th>Company</th>
-            <th>Applied Date</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Full-stack Developer</td>
-            <td>GAP</td>
-            <td>1 March 2026</td>
-            <td>Pending</td>
-        </tr>
-        <tr>
-            <td>Cyber Security Analyst</td>
-            <td>Thndr</td>
-            <td>1 Jan 2026</td>
-            <td>Accepted</td>
-        </tr>
-        <tr>
-            <td>Mobile Application Developer</td>
-            <td>Google</td>
-            <td>4 Dec 2026</td>
-            <td>Rejected</td>
-        </tr>
-        <tr>
-            <td>Python Developer</td>
-            <td>Microsoft</td>
-            <td>12 March 2026</td>
-            <td>Pending</td>
-        </tr>
-    </table>
+    <header>
+        <h1>Applied Jobs</h1>
+        <nav>
+            <input type="search" placeholder="Search by job title..." id="jobSearch">
+        </nav>
+    </header>
+
+    <section class="applied-jobs-container">
+        <!-- Added class 'jobs-table' to match your CSS -->
+        <table class="jobs-table">
+            <thead>
+                <tr>
+                    <th>Job Title</th>
+                    <th>Company</th>
+                    <th>Applied Date</th>
+                    <th>Status</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <!-- Added ID 'appliedJobsList' for JavaScript to target -->
+            <tbody id="appliedJobsList">
+                <!-- Data will be loaded here dynamically from JS -->
+            </tbody>
+        </table>
+    </section>
+
+    <footer>
+        <p>© 2026 Job Search Website - FCAI Project</p>
+    </footer>
+
+    <!-- 3. Link to your specific JS -->
+    <script src="js/AppJob.js"></script>
 </body>
 </html>

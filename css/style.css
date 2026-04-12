@@ -5,6 +5,19 @@
 }
 
 body {
+
+    /* set the same background to all pages */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                      url('../Home-background.jpeg'); 
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps background still while scrolling */
+    min-height: 100vh;
+    margin: 0;
+
+
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f4f7f6;

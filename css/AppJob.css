@@ -1,0 +1,109 @@
+/* ============================================================
+   Applied Jobs Page - Specific Styles
+   ============================================================ */
+
+/* Container for the page title and filter section */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+/* Responsive wrapper for the table to prevent layout breaking */
+.applied-jobs-container {
+    overflow-x: auto;
+    width: 100%;
+}
+
+/* Glassmorphism Table Styling */
+.jobs-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Space between rows */
+}
+
+/* Header Cells Styling */
+.jobs-table th {
+    background-color: rgba(52, 152, 219, 0.3); /* Transparent blue for headers */
+    color: #ffffff;
+    padding: 18px 15px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1.2px;
+}
+
+/* Data Cells Styling */
+.jobs-table td {
+    background-color: rgba(255, 255, 255, 0.05); /* Very slight transparency */
+    padding: 15px;
+    color: #e0e0e0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+/* Rounding the corners of each row */
+.jobs-table tr td:first-child { 
+    border-left: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 12px 0 0 12px; 
+}
+.jobs-table tr td:last-child { 
+    border-right: 1px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 0 12px 12px 0; 
+}
+
+/* Row Hover Effect */
+.jobs-table tr:hover td {
+    background-color: rgba(255, 255, 255, 0.12);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+    border-color: rgba(52, 152, 219, 0.4);
+}
+
+/* Status Badges Styling */
+.status-badge {
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    min-width: 90px;
+}
+
+.status-pending { 
+    background-color: rgba(241, 196, 15, 0.15); 
+    color: #f1c40f; 
+    border: 1px solid rgba(241, 196, 15, 0.4); 
+}
+
+.status-accepted { 
+    background-color: rgba(46, 204, 113, 0.15); 
+    color: #2ecc71; 
+    border: 1px solid rgba(46, 204, 113, 0.4); 
+}
+
+.status-rejected { 
+    background-color: rgba(231, 76, 60, 0.15); 
+    color: #e74c3c; 
+    border: 1px solid rgba(231, 76, 60, 0.4); 
+}
+
+/* Action Buttons (e.g., Withdraw Application) */
+.btn-withdraw {
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #ff7675;
+    border: 1px solid #d63031;
+    padding: 8px 15px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-withdraw:hover {
+    background-color: #d63031;
+    color: white;
+}
