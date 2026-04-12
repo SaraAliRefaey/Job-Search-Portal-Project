@@ -14,8 +14,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; /* Keeps background still while scrolling */
+    
     min-height: 100vh;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 
 
     font-family: 'Poppins', sans-serif;
@@ -23,15 +26,11 @@ body {
     background-color: #f4f7f6;
     color: #333;
     height: 100vh;
-    min-height: 100vh;
-    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
-    url(../Home-background.jpeg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    background-attachment: fixed;
+}
+
+/* Text Shadow for better contrast on all text elements */
+h1, h2, h3, p, th, td, label {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
 }
 
 header {
