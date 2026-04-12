@@ -1,8 +1,10 @@
 myform=document.querySelector("form");
 myform.addEventListener("submit",function(event){
 event.preventDefault();
- const title=document.getElementById("title").value;
+const title=document.getElementById("title").value;
+const company= document.getElementById('company').value,
 const salary=document.getElementById("salary").value;
+const ExperienceRequired= document.getElementById('experience required').value,
 const description=document.getElementById("description").value;
 const status=document.getElementById("status").value;
 
@@ -36,7 +38,9 @@ if (title.length<5){
 const job ={
 id:Date.now(),
 title:title,
+company:company,
 salary:salary,
+ExperinceRequired:ExperienceRequired,
 description:description,
 status:status};
 
