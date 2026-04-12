@@ -69,7 +69,7 @@ if (loginForm){
                 localStorage.setItem("user", JSON.stringify(parsedUser));
                 
                 if (parsedUser.isAdmin){
-                    window.location.href = "admin_dashboard.html";
+                    window.location.href = "index.html";
                 }
                 else{
                     window.location.href = "index.html";
