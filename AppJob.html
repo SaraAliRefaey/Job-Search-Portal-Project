@@ -1,49 +1,70 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Applied Jobs </title>
-    <!-- 1. Link to Google Fonts & Font Awesome -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <link rel="stylesheet" href="https://cloudflare.com">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Applied Jobs</title>
+
     <!-- 2. Link to CSS files -->
-     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/AppJob.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/AppJob.css" />
+  </head>
+  <body>
     <header>
-        <h1>Applied Jobs</h1>
-        <nav>
-            <input type="search" placeholder="Search by job title..." id="jobSearch">
-        </nav>
+      <h1>Applied Jobs</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="JobPage.html">Job Details</a></li>
+          <li>
+            <input
+              type="search"
+              placeholder="Search by job title..."
+              id="jobSearch"
+            />
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section class="applied-jobs-container">
-        <!-- Added class 'jobs-table' to match your CSS -->
-        <table class="jobs-table">
-            <thead>
-                <tr>
-                    <th>Job Title</th>
-                    <th>Company</th>
-                    <th>Applied Date</th>
-                    <th>Status</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <!-- Added ID 'appliedJobsList' for JavaScript to target -->
-            <tbody id="appliedJobsList">
-                <!-- Data will be loaded here dynamically from JS -->
-            </tbody>
-        </table>
+      <!-- Added class 'jobs-table' to match your CSS -->
+      <table class="jobs-table">
+        <thead>
+          <tr>
+            <th>Job Title</th>
+            <th>Company</th>
+            <th>Applied Date</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <!-- Added ID 'appliedJobsList' for JavaScript to target -->
+        <tbody id="appliedJobsList">
+          <!-- Data will be loaded here dynamically from JS -->
+        </tbody>
+      </table>
     </section>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2026 Job Search Website - FCAI Project</p>
+      <hr />
+
+      <p><strong>Job Search Website</strong></p>
+
+      <p>
+        <a href="index.html">Home</a> | <a href="signup.html">Sign Up</a> |
+        <a href="login.html">Login</a>
+      </p>
+
+      <p>Contact: support@jobsearch.com</p>
+
+      <p>© 2026 Job Search Website - FCAI Project</p>
     </footer>
 
-    <!-- 3. Link to your specific JS -->
+    <!-- Link to your specific JS -->
     <script src="js/AppJob.js"></script>
-</body>
+  </body>
 </html>
