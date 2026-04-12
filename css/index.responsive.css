@@ -1,0 +1,86 @@
+@media (max-width: 1300px) {
+    section,#add-job-section{
+        margin: 20px 4%;
+        padding: 25px;
+        border-radius: 15px;
+    }
+
+    header h1{
+        font-size: 1.8rem;
+    }
+
+    .jobs-grid{
+        gap:15px;
+    }
+}
+@media (min-width: 371px) and (max-width: 1300px){
+
+    header h1{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    input, button{
+        /* font-size: 14px;
+        padding: 10px; */
+
+        height: 45px;
+        border-radius: 12px !important;
+    }
+
+    /* button{
+        width: 100%;
+    } */
+}
+ @media (min-width: 577px) and (max-width: 1300px) {
+    section form {
+        display: grid;
+        grid-template-columns: 2fr 1fr auto;
+        gap: 12px;
+        align-items: end;
+    }
+
+    button{
+        width: auto;
+    }
+
+    input{
+        flex: 1;
+    }
+ }
+ @media (min-width: 769px) and (max-width: 1300px) {
+    #add-job-form{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    #add-job-form button{
+        grid-column: span 2;
+        margin-top: 10px;
+    }
+
+    .job-card h4{
+        font-size: 1.2rem;
+    }
+ }
+ @media (min-width: 992px) and (max-width: 1300px) {
+    header{
+        padding: 1rem 6%;
+    }
+
+    nav ul li{
+        margin-left: 25px;
+    }
+
+    nav ul li a i{
+        font-size: 24px;
+    }
+ }
+ @media (min-width: 1181px) and (max-width: 1300px) {
+    #jobs-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 25px;
+    }
+ }
