@@ -72,7 +72,7 @@ if (loginForm){
                     window.location.href = "index.html";
                 }
                 else{
-                    window.location.href = "index.html";
+                    window.location.href = "Recruiter dashboard.html";
                 }
 
             }
