@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/all.min.css">
         <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/index.responsive.css">
     </head>
     <body>
         <header>
@@ -21,6 +22,12 @@
                     </li>
                     <li>
                         <a href="Signup.html"><i class="fa-solid fa-user-plus"></i></a>
+                    </li>
+                    <li>
+                        <button id="btn">
+                            <i class="fa fa-user-shield" aria-hidden="true"></i>
+                            <span id="role-text"> Switch Admin</span>
+                        </button>
                     </li>
                 </ul>
             </nav>
@@ -50,6 +57,7 @@
         </section>
         <br>
         <hr>
+        <div id="jobs-container" class="jobs-grid"></div>
         <section id="add-job-section">
             <h3> <i class="fa fa-plus-circle"></i>Add New Job (Admin)</h3>
             <form action="" id="add-job-form">
@@ -107,3 +115,19 @@
         </footer>
     </body>
 </html>
+
+<!-- <div class="job-card">
+    <h4>${job.title}</h4>
+    <p><i class="fa fa-building"></i> ${job.company} </p>
+    <p><i class="fa fa-briefcase"></i> Exp : ${job.experience}</p>
+    <p class="salary">${job.salary}</p>
+    <span class="badge">${job.status}</span>
+    <div class="card-footer">
+        <button class="apply-btn" onclick="alert('Applied!')"> Apply </button>
+        <button class="delete-btn" onclick="deleteJob(${job.id})"><i class="fa fa-trash"></i></button>
+    </div>
+</div> -->
+
+
+
+<script src="script.js"></script>

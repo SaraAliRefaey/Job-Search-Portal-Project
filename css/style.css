@@ -5,32 +5,20 @@
 }
 
 body {
-
-    /* set the same background to all pages */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                      url('../Home-background.jpeg'); 
-    
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed; /* Keeps background still while scrolling */
-    
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-
-
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
     background-color: #f4f7f6;
     color: #333;
     height: 100vh;
-}
-
-/* Text Shadow for better contrast on all text elements */
-h1, h2, h3, p, th, td, label {
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+    url(../Home-background.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
 }
 
 header {
@@ -54,6 +42,21 @@ header h1 {
     margin: 0;
     letter-spacing: 2px;
     text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+header ul li #btn #role-text{
+    font-family: 'Poppins',sans-serif;
+}
+
+#btn:hover{
+    background: rgba(52, 152, 219, 0.3);
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
 }
 
 nav ul {
@@ -90,6 +93,10 @@ section , #add-job-section {
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: white;
     transition: 0.2s;
+}
+
+section form button{
+    font-family: 'Poppins' , sans-serif;
 }
 
 section:hover , #add-job-section:hover{
@@ -134,7 +141,7 @@ input:focus{
 
 ::placeholder{
     color: rgba(255, 255, 255, 0.5);
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -269,6 +276,7 @@ td a:hover{
     cursor: pointer;
     transition: transform 0.2s, background-color 0.3s;
     grid-column: span 1;
+    font-family: 'Poppins' , sans-serif;
 }
 
 #add-job-section button:hover {
@@ -287,4 +295,24 @@ footer {
     font-size: 0.9rem;
     background: rgba(0, 0, 0, 0.5);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hidden{
+    display: none !important;
+}
+
+.jobs-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px , 1fr));
+    gap: 20px;
+    padding: 20px 5%;
+}
+
+.job-card{
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
 }
