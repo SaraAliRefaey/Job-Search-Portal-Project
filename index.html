@@ -23,19 +23,27 @@
                     <li>
                         <a href="Signup.html"><i class="fa-solid fa-user-plus"></i></a>
                     </li>
-                    <li>
+                    <li id="admin-dashboard-link" style="display: none;">
+                        <button id="btn" onclick="window.location.href = 'Recruiter Dashboard.html'" class="dashboard-btn">
+                            <i class="fa-solid fa-gauge"></i>
+                            <span id="role-text">Dashboard</span>
+                        </button>
+                        
+                        
+                    </li>
+                    <!-- <li>
                         <button id="btn">
                             <i class="fa fa-user-shield" aria-hidden="true"></i>
                             <span id="role-text"> Switch Admin</span>
                         </button>
-                    </li>
+                    </li> -->
                 </ul>
             </nav>
         </header>
         <hr>
         <section>
             <h2>Look for your own job</h2>
-            <form action="#" method="get">
+            <form action="job-details.html" method="get" id="search-form">
                 <label for="job-title"> Job Title :</label>
                 <input
                     type="search"
@@ -130,4 +138,4 @@
 
 
 
-<script src="script.js"></script>
+<script src="js/script.js"></script>

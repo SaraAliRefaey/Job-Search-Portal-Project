@@ -4,8 +4,7 @@
     box-sizing: border-box;
 }
 
-body 
-{
+body {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
@@ -16,37 +15,30 @@ body
     background-size: cover;
     background-attachment: fixed;
     color: white;
-
-
 }
 
-header 
-{
+header {
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(10px);
-    padding: 1rem 5%; /*مسافه داخليه */
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1); /*  ده بيعمل الخط الخفيف */
-
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 nav ul { display: flex; list-style: none; }
-nav ul li {  margin-left: 25px; }
-nav ul li a
- {
+nav ul li { margin-left: 25px; }
+nav ul li a {
     color: white;
-    text-decoration: none; /* remove underline */
-    font-weight: bold; transition: 0.3s;  /*  بيخلي الحركه ناعمه*/
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
 }
-
 nav ul li a:hover { color: #3498db; }
 
-nav ul li a:active { color: rgb(46, 185, 143); }
- 
-h1 
-{ 
+
+h1 { 
     text-align: center;
     margin: 40px 0;
     font-size: 2.5rem;
@@ -56,20 +48,19 @@ h1
 }
 
 
-table 
-{
+table {
     width: 90%;
     margin: 0 auto 30px;
-    border-collapse: collapse; /*يلغي المسافات بين الحدود */
+    border-collapse: collapse;
     
     background-color: rgba(0, 0, 0, 0.85); 
     backdrop-filter: blur(12px);
-    border-radius: 10px;  overflow: hidden; /*  حواف دائريه*/
+    border-radius: 10px;
+    overflow: hidden;
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-th 
-{
+th {
     background-color: rgba(52, 152, 219, 0.4); 
     color: #ffffff; 
     padding: 15px;
@@ -80,7 +71,7 @@ th
 
 td {
     padding: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05); /*  يضع خط خفيف بين الصفوف*/
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
     color: #ffffff !important; 
     text-align: center; 
     font-size: 16px;
@@ -91,11 +82,13 @@ td {
 
 .btn-edit, .btn-delete {
     text-decoration: none;
-    padding: 8px 18px; border-radius: 6px; /*  شكل الزر*/
+    padding: 8px 18px;
+    border-radius: 6px;
     font-size: 13px;
-    font-weight: bold; transition: 0.3s; /*  بيخلي الحركه ناعمه*/
-
-    display: inline-block;  margin: 5px; /* بيخليهم جنب بعض بمسافة */
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block; 
+    margin: 5px;
 }
 
 .btn-edit { 
@@ -113,8 +106,7 @@ td {
 .btn-edit:hover { background: #3498db; color: white; }
 .btn-delete:hover { background: #e74c3c; color: white; }
 
-.btn-add 
-{
+.btn-add {
     background-color: #3498db;
     color: white;
     padding: 12px 25px;
@@ -126,13 +118,11 @@ td {
     font-weight: bold;
 }
 
-footer
- {
+footer {
     text-align: center;
     padding: 20px;
     background: rgba(0, 0, 0, 0.8);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: #7f8c8d;
-    margin-top: auto;  
-
+    margin-top: auto;
 }

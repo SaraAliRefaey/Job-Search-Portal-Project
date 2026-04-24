@@ -81,6 +81,21 @@ nav ul li a i:hover {
     color: #5dade2;
 }
 
+.dashboard-btn{
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 0,3s ease;
+}
+
 section , #add-job-section {
     padding: 30px 5%;
     /* background: white; */
