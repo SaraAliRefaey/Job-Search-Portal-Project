@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Log In</title>
+    <link rel="stylesheet" href="css/login_signup_style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+</head>
+
+
+<body>
+    <header>
+        <h1>WorkWave</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="signup.html"><a href="Login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                </li>
+                <li>
+                    <a href="login.html"><a href="Signup.html"><i class="fa-solid fa-user-plus"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    
+    <section id="login">
+        <h1>Welcome To Our Website, WorkWave</h1>
+        <br>
+
+        <p>Login to Your Account</p>
+        <br>
+        
+        <form id="loginForm">
+            <fieldset id="lborder">
+                <legend name="login">Your Information</legend>
+                <br>
+                <div>
+                    <label for="username"> Username </label>
+                    <input type="text" name="Username" id="username" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password"> Password </label>
+                    <input type="password" id="password" minlength="10" maxlength="20" required>
+                    <img src="show-pasword.PNG" height="15px" width="22px" id="show-password">
+                </div>
+
+                <br>
+
+                <div>
+                    <button type="submit">Login</button>
+                    <!-- <input type="reset"> -->
+                </div>
+
+            </fieldset>
+
+        </form>
+        <a id="msg" href="SignUp.html" title="Go to the sign up page">Don't have an account?</a>
+    </section>
+    
+    <footer>
+        <hr>
+        <p><strong>Job Search Website</strong></p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="signup.html">Sign Up</a> |
+            <a href="login.html">Login</a>
+        </p>
+
+        <p>Contact: support@jobsearch.com</p>
+        <p>© 2026 Job Search Website - FCAI Project</p>
+
+    </footer>
+
+    <script src="js/SignUp&Login.js"></script>
+</body>
+
+</html>

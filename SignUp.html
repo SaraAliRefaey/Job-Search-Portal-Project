@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sign Up</title>
+    <link rel="stylesheet" href="css/login_signup_style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    
+</head>
+
+
+<body>
+    <header>
+        <h1>WorkWave</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html"><i class="fa-solid fa-house"></i></a>
+                </li>
+                <li>
+                    <a href="signup.html"><a href="Login.html"><i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+                </li>
+                <li>
+                    <a href="login.html"><a href="Signup.html"><i class="fa-solid fa-user-plus"></i></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    
+    <section id="sign-up">
+        <h1>Welcome To Our Website, WorkWave</h1>
+        <br>
+
+        <p>Create Your Account</p>
+        <br>
+        
+        <form onsubmit="return validatePassword()" id="signUpForm">
+            <fieldset id="sborder">
+                <legend name="sign-up">Account Information</legend>
+                <br>
+                <div>
+                    <label for="username"> Username </label>
+                    <input type="text" name="Username" id="username" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="password"> Password </label>
+                    <input type="password" id="password" minlength="10" maxlength="20" required>
+                    <img src="show-pasword.PNG" height="15px" width="22px" id="show-password">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="Confirmp"> Confirm Password </label>
+                    <input type="password" id="Confirmp" minlength="10" maxlength="20" required>
+                    <img src="show-pasword.PNG" height="15px" width="22px" id="show-confirm-password">
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="mail"> Email </label>
+                    <input type="email" name="email" id="mail" required>
+                </div>
+
+                <br>
+
+                <div>
+                    <label for="company" id="companyLabel" hidden> Company Name </label>
+                    <input type="Text" name="Company_name" id="company" hidden placeholder="Only For Company Admins">
+                </div>
+
+                <br>
+
+                <div>
+                    <input type="radio" name="User" id="admin" onclick="showCompanyName()">
+                    <label for="admin"> Admin </label>
+
+                    <input type="radio" name="User" id="companyadmin" onclick="showCompanyName()">
+                    <label for="companyadmin"> Company Admin </label>
+                </div>
+
+                <br>
+
+                <div>
+                    <button type="submit">Sign Up</button>
+                    <!-- <input type="reset"> -->
+                </div>
+                
+            </fieldset>
+        </form>
+        <a id="msg" href="Login.html" title="Go to the login page">Already have an account?</a>
+    </section>
+
+    
+
+    
+
+    <footer>
+
+        <hr>
+
+        <p><strong>Job Search Website</strong></p>
+
+        <p>
+            <a href="index.html">Home</a> |
+            <a href="signup.html">Sign Up</a> |
+            <a href="login.html">Login</a>
+        </p>
+
+        <p>Contact: support@jobsearch.com</p>
+
+        <p>© 2026 Job Search Website - FCAI Project</p>
+
+    </footer>
+
+    <script src="js/SignUp&Login.js"></script>
+</body>
+
+</html>

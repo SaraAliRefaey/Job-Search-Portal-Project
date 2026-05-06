@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit_Job</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/add&edit_job.css">
+</head>
+<body>
+   <header>
+    <nav>
+         <p>
+        <a href="index.html">Home</a> |
+        <a href="Recruiter Dashboard.html">Dashboard</a> |
+        <a href="add_job.html">Add Job</a> |
+        <a href="edit_job.html">Edit Job</a> 
+    </p>
+    </nav>
+   </header> 
+   <main>
+    <h2>Update Jop</h2>
+   </main>
+   <form method="post">
+   
+    
+         <div>
+            <label for="title">Jop Title : </label>
+            <br>
+            <input id="title" type="text"  name=" title"  >
+          <span id="tit" style="color: red; font: size 8px; display: none;font-family: 'Courier New', Courier, monospace;">title is required</span>
+
+        </div>
+        <br>
+        <div>
+            <label for="salary">Salary : </label>
+            <br>
+            <input id="salary" type="number"  name="salary"  >
+          <span id="sal" style="color: red; font: size 8px;display: none;font-family: 'Courier New', Courier, monospace; ">Salary is required</span>
+
+        </div>
+        <br>
+        <div>
+            <label for="description">Description : </label>
+            <br>
+            <textarea id="description" name="description" rows="6" cols="50" ></textarea>
+         <span id="des" style="color: red; font: size 8px;display: none;font-family: 'Courier New', Courier, monospace; ">Description is required</span>
+
+        </div>
+        <br>
+        <div>
+            <label for="status"> Jop Status : </label>
+            <br>
+            <select id="status" name="status" required>
+                <option value="open">Open</option>
+                <option value="closed">Closed</option>
+            </select>   
+        </div>
+        <br>
+        <div>
+            <button type="submit" id="btn" >Update Jop</button>
+        </div>
+       
+    </form>
+    
+<footer>
+
+
+<p><strong>Job Search Website</strong></p>
+
+<p>
+<a href="index.html">Home</a> |
+<a href="signup.html">Sign Up</a> |
+<a href="login.html">Login</a>
+</p>
+
+<p>Contact: support@jobsearch.com</p>
+
+<p>© 2026 Job Search Website - FCAI Project</p>
+
+</footer>
+
+  
+<script src="edit_jop.js"></script>
+</body>
+</html>
